@@ -1,10 +1,9 @@
 
 add_rules("mode.debug", "mode.release")
-add_requires("lua", {configs = {shared = true}})
 
-if is_os 'windows' then 
-    add_requires('vcpkg::unicorn')
-end
+add_requires("lua", {configs = {shared = true}})
+add_requires("unicorn", {configs = {arch = get_config("unicorn-arch")}})
+add_requires("python", {kind = "binary"})
 
 target 'unicorn54'
     set_kind 'shared'

@@ -1,5 +1,11 @@
 Changes
 =======
+1.3.0 (2022-02-22)
+
+Others Changes
+~~~~~~~~~~~~~~
+
+* Build with [xmake](https://xmake.io/)
 
 1.2.0 (2021-08-11)
 ------------------
